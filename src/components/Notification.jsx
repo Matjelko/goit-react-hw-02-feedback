@@ -1,7 +1,9 @@
+import "./Notification.css"
+
 const Notification = ({message}) => {
     return(
         <div>
-            <p>{message}</p>
+            <p className="notification__font-size">{message}</p>
         </div>
     )
 }
