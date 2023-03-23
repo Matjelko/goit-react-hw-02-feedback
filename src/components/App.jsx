@@ -30,7 +30,7 @@ class App extends Component{
           />
         </Section>
 
-        {total == 0 
+        {total === 0 
         ? (<Notification message="There is no feedback"/>)
         : ( <Section title = "Statistics">
               <Statistics
