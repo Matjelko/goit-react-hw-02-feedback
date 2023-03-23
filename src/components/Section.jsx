@@ -1,9 +1,9 @@
-const Section = ({title="Please leave feedback", children}) => {
+const Section = ({title, children}) => {
     return(
-        <section title="feedback">
+        <div>
             <h2>{title}</h2>
             {children}
-        </section>
+        </div>
     )
 }
 

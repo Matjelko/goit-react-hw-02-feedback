@@ -1,17 +1,14 @@
-const FeedbackOptions = () => {
-    return (
-        <div>
-          <button type="button" onClick={this.handleGood}>
-            Good
-          </button>
-          <button type="button" onClick={this.handleNeutral}>
-            Neutral
-          </button>
-          <button type="button" onClick={this.handleBad}>
-            Bad
-          </button>
-        </div>
-    )
-}
+import "./FeedbackOptions.css";
+
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  return(
+    <div>
+      {options.map((option) => (
+        <button key={option} onClick={() => onLeaveFeedback(option)}>
+          {option}
+        </button>
+      ))}
+    </div>
+  )};
 
 export default FeedbackOptions;
